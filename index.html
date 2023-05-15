@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Invoice</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="w-full rounded-b-3xl bg-blue-600 p-10 shadow-md">
+      <div class="flex flex-col sm:flex-row gap-5 sm:justify-between items-center">
+        <div class="flex flex-col">
+          <img src="./assets/invoice.svg" class="w-32" alt="" />
+          <h1 class="text-2xl md:text-5xl font-semibold text-white pl-5">Invoice</h1>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex flex-col gap-1 text-white">
+          <h1 class="text-3xl md:text-5xl font-bold">Company Name</h1>
+          <div
+            class="font-semibold text-lg flex flex-col items-center sm:items-end gap-1 text-gray-300"
+          >
+            <p>Business Address</p>
+            <p>City</p>
+            <p>Country</p>
+            <p>Postal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-5 md:p-10 flex flex-col gap-10">
+      <!-- Billing -->
+      <div class="rounded-xl p-8 bg-gray-200">
+        <h1 class="font-bold uppercase">Bill to:</h1>
+        <div class="flex justify-between gap-2 mt-4">
+          <div class="text-gray-700 flex flex-col justify-between">
+            <p class="text-lg">Company Name</p>
+            <p class="">Address</p>
+            <p class="">City</p>
+            <p class="">Country</p>
+            <p class="">Postal</p>
+          </div>
+          <div class="flex flex-col items-end uppercase text-md">
+            <p class="font-bold">invoice #</p>
+            <p class="pb-2">0000001</p>
+            <p class="font-bold">date</p>
+            <p class="pb-2">12/31/20</p>
+            <p class="font-bold">invoice due date</p>
+            <p>12/31/20</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-500"></div>
+
+      <!-- Table -->
+      <div class="p-5 rounded-xl shadow-md overflow-x-auto">
+        <table class="w-full border-separate">
+          <thead class="uppercase">
+            <tr>
+              <th class="text-left">Item</th>
+              <th class="text-left">Description</th>
+              <th class="text-left">Quantity</th>
+              <th class="text-left">Price</th>
+              <th class="text-left">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item 1</td>
+              <td>Description 1</td>
+              <td>1</td>
+              <td>$100.00</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Item 2</td>
+              <td>Description 2</td>
+              <td>1</td>
+              <td>$100.00</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Item 3</td>
+              <td>Description 3</td>
+              <td>1</td>
+              <td>$100.00</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Item 4</td>
+              <td>Description 4</td>
+              <td>1</td>
+              <td>$100.00</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Item 5</td>
+              <td>Description 5</td>
+              <td>1</td>
+              <td>$100.00</td>
+              <td>$100.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Total  -->
+    <div class="flex flex-col-reverse md:flex-row border">
+      <div class="w-full p-5 md:p-10 bg-blue-200">
+        <h1 class="uppercase font-bold">Notes:</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut
+          nisi tempus massa blandit luctus.
+        </p>
+      </div>
+      <div class="bg-blue-500 p-10">
+        <div class="flex flex-col md:items-end text-white">
+          <h2 class="uppercase font-semibold">Total</h2>
+          <p class="text-4xl md:text-5xl font-bold">$00000.00</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
